@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="CityApp.HandelaarsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:CityApp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <GridView
+        CanDragItems="False"
+        IsItemClickEnabled="False"
+        IsSwipeEnabled="False"
+        ItemClick="GridView_ItemClick"
+        ItemsSource="{Binding handelaars}"
+        SelectionChanged="GridView_SelectionChanged"
+        SelectionMode="Single">
+        <GridView.ItemTemplate>
+            <DataTemplate>
+                <Grid
+                    Width="190"
+                    Height="130"
+                    Margin="4,4,4,8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Width="186"
+                        Margin="8,4"
+                        HorizontalAlignment="Left"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="{Binding Title}" />
+                    <Image
+                        Grid.Row="1"
+                        Width="36"
+                        Margin="8,0,8,8"
+                        VerticalAlignment="Center"
+                        Source="{Binding ImagePath}" />
+                </Grid>
+            </DataTemplate>
+        </GridView.ItemTemplate>
+    </GridView>
+</Page>
