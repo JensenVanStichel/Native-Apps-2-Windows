@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Event
+    public class Event
     {
         public string Naam { get; set; }
         public DateTime BeginDatum { get; set; }

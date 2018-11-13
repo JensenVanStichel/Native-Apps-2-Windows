@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Zaak
+    public class Zaak
     {
         public Type Type { get; set; }
         public Adres Adres { get; set; }

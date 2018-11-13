@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Adres
+    public class Adres
     {
         public int id { get; set; }
         public int Huisnummer { get; set; }

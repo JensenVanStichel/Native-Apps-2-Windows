@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Notificatie
+    public class Notificatie
     {
         public string Titel { get; set; }
         public string Beschrijving { get; set; }

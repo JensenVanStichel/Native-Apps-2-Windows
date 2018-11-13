@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Categorie
+    public class Categorie
     {
         public String Naam { get; set; }
     }

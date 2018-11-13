@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Image
+    public class Image
     {
         public int Id { get; set; }
         public string Naam { get; set; }

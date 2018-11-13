@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    enum Type
+    public enum Type
     {
         Restaurant,
         Hotel, 
