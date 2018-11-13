@@ -98,6 +98,17 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Adres.cs" />
+    <Compile Include="Model\ApplicationUser.cs" />
+    <Compile Include="Model\Categorie.cs" />
+    <Compile Include="Model\Event.cs" />
+    <Compile Include="Model\Gebruiker.cs" />
+    <Compile Include="Model\Handelaar.cs" />
+    <Compile Include="Model\Image.cs" />
+    <Compile Include="Model\Notificatie.cs" />
+    <Compile Include="Model\Promotie.cs" />
+    <Compile Include="Model\Type.cs" />
+    <Compile Include="Model\Zaak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\HandelaarsViewModel.cs" />
     <Compile Include="ViewModel\MainPageViewModel.cs" />
@@ -150,9 +161,7 @@
       <Version>6.1.7</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
