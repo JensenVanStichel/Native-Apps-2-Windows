@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Handelaar
+    class Handelaar: ApplicationUser
     {
+        public Zaak Zaak { get; set; }
 
+        protected Handelaar() { }
+
+        public Handelaar(string naam, Adres adres)
+        {
+            Naam = naam;
+            Adres = adres;
+        }
     }
 }

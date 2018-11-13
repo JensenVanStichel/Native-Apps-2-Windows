@@ -13,8 +13,9 @@ namespace CityApp.Model
         Hotel, 
         Café,
         Winkel,
+        Recreatie,
+        Cultuur,
         [Display(Description="Fast food")]
         Fastfood
-
     }
 }

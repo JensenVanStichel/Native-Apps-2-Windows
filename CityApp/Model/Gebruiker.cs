@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CityApp.Model
 {
-    class Gebruiker
+    class Gebruiker: ApplicationUser
     {
         public ICollection<Notificatie> Notificaties { get; set; }
     }
+
 }

@@ -8,5 +8,19 @@ namespace CityApp.Model
 {
     class Promotie
     {
+        public DateTime? BeginDatum { get; set; }
+        public DateTime? EindDatum { get; set; }
+        public string Titel { get; set; }
+        public string Beschrijving { get; set; }
+
+        protected Promotie() { }
+
+        public Promotie(DateTime? beginDatum, DateTime? eindDatum, string titel, string beschrijving)
+        {
+            BeginDatum = beginDatum;
+            EindDatum = eindDatum;
+            Titel = titel;
+            Beschrijving = beschrijving;
+        }
     }
 }

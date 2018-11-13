@@ -107,6 +107,7 @@
     <Compile Include="Model\Image.cs" />
     <Compile Include="Model\Notificatie.cs" />
     <Compile Include="Model\Promotie.cs" />
+    <Compile Include="Model\Provincie.cs" />
     <Compile Include="Model\Type.cs" />
     <Compile Include="Model\Zaak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

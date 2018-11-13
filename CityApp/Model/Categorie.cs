@@ -8,5 +8,6 @@ namespace CityApp.Model
 {
     class Categorie
     {
+        public String Naam { get; set; }
     }
 }
