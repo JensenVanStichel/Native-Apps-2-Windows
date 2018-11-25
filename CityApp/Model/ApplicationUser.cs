@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,11 +9,12 @@ namespace CityApp.Model
 {
     public abstract class ApplicationUser
     {
-
-        public String Naam { get; set; }
-        public Adres Adres { get; set; }
+        public int Id { get; set; }
+        public string Naam { get; set; }
+        public string Voornaam { get; set; }
         public string Emailadres { get; set; }
         public string Wachtwoord { get; set; }
+        public Adres Adres { get; set; }
 
         protected ApplicationUser() { }
     }

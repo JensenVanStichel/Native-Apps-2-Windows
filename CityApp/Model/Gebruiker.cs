@@ -8,7 +8,36 @@ namespace CityApp.Model
 {
     public class Gebruiker : ApplicationUser
     {
-        public ICollection<Notificatie> Notificaties { get; set; }
+        public ICollection<Notificatie> _notificaties;
+
+        protected Gebruiker()
+        {
+
+        }
+        
+        public Gebruiker(string naam, string voornaam, string emailadres, string wachtwoord, Adres adres)
+        {
+            Naam = naam;
+            Voornaam = voornaam;
+            Emailadres = emailadres;
+            Wachtwoord = wachtwoord;
+            Adres = adres;
+            _notificaties = new List<Notificatie>();
+        }
+
+        public ICollection<Notificatie> Notificaties
+        {
+            get
+            {
+                return _notificaties;
+            }
+        }
+
+        public void VoegNotificatieToe(Notificatie notificatie)
+        {
+            _notificaties.Add(notificatie);
+        }
+        
     }
 
 }

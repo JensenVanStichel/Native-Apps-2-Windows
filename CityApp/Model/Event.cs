@@ -8,6 +8,7 @@ namespace CityApp.Model
 {
     public class Event
     {
+        public int Id { get; set; }
         public string Naam { get; set; }
         public DateTime BeginDatum { get; set; }
         public DateTime EindDatum { get; set; }

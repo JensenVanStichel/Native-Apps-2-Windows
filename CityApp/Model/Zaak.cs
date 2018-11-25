@@ -8,12 +8,14 @@ namespace CityApp.Model
 {
     public class Zaak
     {
+        public int Id { get; set; }
+        public string Naam { get; set; }
         public Type Type { get; set; }
         public Adres Adres { get; set; }
-        public ICollection<Categorie> Categorieen { get; set; }
-        public ICollection<Event> Events { get; set; }
-        public ICollection<Image> Images { get; set; }
-        public ICollection<Promotie> Promoties { get; set; }
+        private ICollection<Categorie> _categorieen;
+        private ICollection<Event> _events;
+        private ICollection<Image> _images;
+        private ICollection<Promotie> _promoties;
 
         protected Zaak() { }
 
@@ -21,10 +23,62 @@ namespace CityApp.Model
         {
             Type = type;
             Adres = adres;
-            Categorieen = categorieen;
-            Events = events;
-            Images = images;
-            Promoties = promoties;
+            _categorieen = categorieen;
+            _events = events;
+            _images = images;
+            _promoties = promoties;
+        }
+
+        public ICollection<Categorie> Categorieen
+        {
+            get
+            {
+                return _categorieen;
+            }
+        }
+
+        public void VoegCategorieToe(Categorie categorie)
+        {
+            _categorieen.Add(categorie);
+        }
+
+        public ICollection<Event> Events
+        {
+            get
+            {
+                return _events;
+            }
+        }
+
+        public void VoegEventToe(Event nieuwEvent)
+        {
+            _events.Add(nieuwEvent);
+        }
+
+        public ICollection<Image> Images
+        {
+            get
+            {
+                return _images;
+            }
+        }
+
+        public void VoegImageToe(Image image)
+        {
+            _images.Add(image);
+        }
+
+        public ICollection<Promotie> Promoties
+        {
+            get
+            {
+                return _promoties;
+            }
+        }
+
+        public void VoegPromotieToe(Promotie promotie)
+        {
+            _promoties.Add(promotie);
         }
     }
 }

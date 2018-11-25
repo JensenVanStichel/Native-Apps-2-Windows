@@ -8,7 +8,7 @@ namespace CityApp.Model
 {
     public class Adres
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public int Huisnummer { get; set; }
         public string Toevoeging { get; set; }
         public string Straatnaam { get; set; }

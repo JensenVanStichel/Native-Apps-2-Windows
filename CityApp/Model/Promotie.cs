@@ -8,6 +8,7 @@ namespace CityApp.Model
 {
     public class Promotie
     {
+        public int Id { get; set; }
         public DateTime? BeginDatum { get; set; }
         public DateTime? EindDatum { get; set; }
         public string Titel { get; set; }
@@ -21,6 +22,17 @@ namespace CityApp.Model
             EindDatum = eindDatum;
             Titel = titel;
             Beschrijving = beschrijving;
+        }
+
+        public void VerlengPromotie(DateTime eindDatum)
+        {
+            if(eindDatum > EindDatum)
+            {
+                EindDatum = eindDatum;
+            } else
+            {
+                throw new Exception("De nieuwe datum moet na de oude datum liggen");
+            }
         }
     }
 }

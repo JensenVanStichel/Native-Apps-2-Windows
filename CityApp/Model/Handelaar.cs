@@ -8,14 +8,22 @@ namespace CityApp.Model
 {
     public class Handelaar : ApplicationUser
     {
-        public Zaak Zaak { get; set; }
-
+        private Zaak _zaak;
         protected Handelaar() { }
-
-        public Handelaar(string naam, Adres adres)
+        public Handelaar(string naam, string voornaam, string emailadres, string wachtwoord, Adres adres)
         {
             Naam = naam;
+            Voornaam = voornaam;
+            Emailadres = emailadres;
             Adres = adres;
+        }
+
+        public Zaak Zaak
+        {
+            get
+            {
+                return _zaak;
+            }
         }
     }
 }

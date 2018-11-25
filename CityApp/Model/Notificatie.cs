@@ -8,6 +8,7 @@ namespace CityApp.Model
 {
     public class Notificatie
     {
+        public int Id { get; set; }
         public string Titel { get; set; }
         public string Beschrijving { get; set; }
         public Image Image { get; set; }
