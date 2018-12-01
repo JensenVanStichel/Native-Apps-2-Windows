@@ -10,12 +10,13 @@ namespace CityApp.Model
     {
         private Zaak _zaak;
         protected Handelaar() { }
-        public Handelaar(string naam, string voornaam, string emailadres, string wachtwoord, Adres adres)
+        public Handelaar(string naam, string voornaam, string emailadres, string wachtwoord, Adres adres, Zaak zaak)
         {
             Naam = naam;
             Voornaam = voornaam;
             Emailadres = emailadres;
             Adres = adres;
+            _zaak = zaak;
         }
 
         public Zaak Zaak

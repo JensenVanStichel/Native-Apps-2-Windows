@@ -108,6 +108,7 @@
     <Compile Include="Model\Notificatie.cs" />
     <Compile Include="Model\Promotie.cs" />
     <Compile Include="Model\Provincie.cs" />
+    <Compile Include="Model\TodoItem.cs" />
     <Compile Include="Model\Type.cs" />
     <Compile Include="Model\Zaak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,6 +159,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Client">
+      <Version>4.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.7</Version>
     </PackageReference>
