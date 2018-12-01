@@ -2,9 +2,12 @@
     x:Class="CityApp.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CityApp">
+    xmlns:local="using:CityApp"
+    xmlns:view="using:CityApp.View">
 
-
-
-
+    <Application.Resources>
+        <DataTemplate x:Key="MainPageViewModel">
+            <view:MainPage />
+        </DataTemplate>
+    </Application.Resources>
 </Application>

@@ -8,5 +8,6 @@ namespace CityApp.ViewModel
 {
     public class HandelaarsViewModel
     {
+        
     }
 }
